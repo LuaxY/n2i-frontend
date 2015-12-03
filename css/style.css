@@ -17,6 +17,18 @@ h2{
   text-align: center;
 }
 
+#filtre{
+  display: block;
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  opacity: 0.7;
+  background-color: black;
+  z-index: 1;
+  top: -10%;
+  left:-10%;
+}
+
 #header{
   display: block;
   position: relative;
@@ -78,4 +90,64 @@ h2{
 }
 #descContent p{
   text-align: justify;
+}
+
+.inputLogin{
+    margin: 0 auto;
+    display: block;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    background: transparent;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    outline: none;
+}
+.inputLogin:focus {
+    border-color: #6EFACB;
+}
+.btnValid{
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.btnValid:hover{
+  background: #6EFACB;
+  color:black;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+::-webkit-input-placeholder {
+    color:rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+#popUpLogin{
+  display: block;
+  position: relative;
+  top: 27.5%;
+  left: 30%;
+  width: 30%;
+  height: 30%;
+  padding:5%;
+  background: black;
+  border-radius: 5px;
+  z-index: 2;
+
+}
+
+.test{
+  transform : scale(0.5);
+  display: none;
+    position: absolute;
+    height : 100%;
+    width : 100%;
+    z-index: 2;
+    top : 0;
+}
+
+.txtPopUp{
+  color: white;
+  text-align: center;
 }
