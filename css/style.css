@@ -14,6 +14,7 @@ h2{
   color:#FFF;
   font-size: 3.5em;
   font-weight: 100;
+  text-align: center;
 }
 
 #header{
@@ -30,17 +31,20 @@ h2{
   position: relative;
   height: 100%;
   width: 15%;
+  display: inline-block;
 }
 
 .btnMenu{
-  width:100%;
+  opacity: 0;
+  display: block;
+  width:0;
   background: #6EFACB;
   font-size: 18px;
   border: none;
   font-weight: 600;
   outline: none;
   height: 14%;
-  display: block;
+  cursor: pointer;
 }
 .material-icons{
   float: left;
@@ -59,5 +63,19 @@ h2{
 }
 
 .content{
+  width: 85%;
+  height: 70%;
+  display:block;
+  float:right;
+}
+.content h2{
+  color : black;
+}
 
+#descContent{
+  width:70%;
+  margin-left:15%;
+}
+#descContent p{
+  text-align: justify;
 }
