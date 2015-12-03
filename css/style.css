@@ -1,8 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,700);
+html{
+  height: 100%;
+}
 
 body{
+  height: 100%;
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
+  margin: 0;
 }
 
 h2{
@@ -13,21 +18,44 @@ h2{
 
 #header{
   display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
+  overflow: hidden;
   text-align: center;
   width: 100%;
-  height: 20%;
-  background: url('../img/header.jpg') no-repeat center center;
+  height: 30%;
+  background: url('../img/header.jpg') center center;
 }
 
 .contentMenu{
   position: relative;
+  height: 100%;
+  width: 15%;
+}
+
+.btnMenu{
+  width:100%;
+  background: #6EFACB;
+  font-size: 18px;
+  border: none;
+  font-weight: 600;
+  outline: none;
+  height: 14%;
+  display: block;
+}
+.material-icons{
   float: left;
-  margin-top: 20%;
-  background-color: yellow;
-  width: 10%;
+  font-size: 25px;
+  margin-left: 2%;
+}
+.pMenu{
+  font-size: 1.0em;
+  font-weight: 300;
+  display: initial;
+  margin-top: 1px;
+}
+#btnMenu1:hover, #btnMenu2:hover, #btnMenu3:hover, #btnMenu4:hover, #btnMenu5:hover {
+  background: yellow;
+  transition: background-color 0.3s ease;
 }
 
 .content{
