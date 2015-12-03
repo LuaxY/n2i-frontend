@@ -60,7 +60,7 @@ h2{
 }
 .material-icons{
   float: left;
-  font-size: 25px;
+  font-size: 50px;
   margin-left: 2%;
 }
 .pMenu{
@@ -137,7 +137,7 @@ h2{
 
 }
 
-.test{
+.contentLogin{
   transform : scale(0.5);
   display: none;
     position: absolute;

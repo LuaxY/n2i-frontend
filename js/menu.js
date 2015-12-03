@@ -3,16 +3,19 @@ $(function() {
   TweenMax.staggerTo(objects, 0.5, {width:"100%",opacity:"1", ease: Back.easeOut.config(1.7)}, 0.07);
 
   //popUpLogin
+  var test = false;
   $('#btnMenu1').on('click', function(){
     //TweenMax.to(".test", 0.2, {ease: Power4.easeOut, opacity:"0.8"});
-    $('.test').fadeIn();
-    TweenMax.to(".test", 1 , {ease: Elastic.easeOut.config(1.2, 0.3), css:{scaleX:1, scaleY:1}});
+    $('.contentLogin').fadeIn();
+    TweenMax.to(".contentLogin", 1 , {ease: Elastic.easeOut.config(1.2, 0.3), css:{scaleX:1, scaleY:1}});
+    test = true;
+  });
 
-
-
-
-
-    //$('#filtre').animate('display', 'block');
+  $('#filtre').on('click', function(){
+    if(test == true){
+        $('.contentLogin').fadeOut();
+        test = false;
+    }
   });
 
   //Over
