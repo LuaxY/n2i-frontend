@@ -71,7 +71,8 @@ h2{
   font-size: 1.0em;
   font-weight: 300;
   display: initial;
-  margin-top: 1px;
+  margin-top: 14px;
+  display: block;
 }
 #btnMenu1:hover, #btnMenu2:hover, #btnMenu3:hover, #btnMenu4:hover, #btnMenu5:hover {
   background: yellow;
@@ -93,11 +94,17 @@ h2{
   display:none;
   float:right;
 }
+.contentDon h2{
+  color : black;
+}
 .contentMap{
   width: 85%;
   height: 70%;
   display:none;
   float:right;
+}
+.contentMap h2{
+  color : black;
 }
 .contentSeriousGame{
   width: 85%;
@@ -105,12 +112,15 @@ h2{
   display:none;
   float:right;
 }
+.contentSeriousGame h2{
+  color : black;
+}
 
-#descContent{
+.descContent{
   width:70%;
   margin-left:15%;
 }
-#descContent p{
+.descContent p{
   text-align: justify;
 }
 
@@ -140,7 +150,7 @@ h2{
   transition: color 0.3s ease;
 }
 
-::-webkit-input-placeholder {
+.inputLogin ::-webkit-input-placeholder {
     color:rgba(255, 255, 255, 0.5);
     text-align: center;
 }
@@ -192,4 +202,24 @@ h2{
 .txtPopUp:hover{
   color:yellow;
   transition: color 0.3s ease;
+}
+
+.inputDon{
+    margin: 0 auto;
+    display: block;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    background: transparent;
+    border: 1px solid black;
+    text-align: center;
+    color: black;
+    outline: none;
+}
+.inputDon:focus {
+    border-color: #6EFACB;
+}
+.inputDon ::-webkit-input-placeholder {
+    color:rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
