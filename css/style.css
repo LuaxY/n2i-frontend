@@ -151,7 +151,6 @@ h2{
   top: 27.5%;
   left: 30%;
   width: 30%;
-  height: 30%;
   padding:5%;
   background: black;
   border-radius: 5px;
@@ -162,12 +161,11 @@ h2{
   -ms-backface-visibility: hidden;
 }
 #popUpLogin2{
-  display: block;
+  display: none;
   position: relative;
   top: 27.5%;
   left: 30%;
   width: 30%;
-  height: 30%;
   padding:5%;
   background: black;
   border-radius: 5px;

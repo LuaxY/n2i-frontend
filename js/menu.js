@@ -21,7 +21,10 @@ $(function() {
   });
 
   $('#coToIns').on('click', function(){
-    TweenMax.to("#connexion", 1, {rotationY:'+=180'});
+    $('#popUpLogin1').fadeOut("400", function(){
+        $('#popUpLogin2').fadeIn("500");
+    });
+
   });
 
   //Over

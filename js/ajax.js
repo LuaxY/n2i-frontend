@@ -4,47 +4,17 @@ var AJAX = {
             console.log('JS AJAX INIT');
 
             /* Manage all .xhrForm with button /!\ need class active in case of                   // multiple form in same page */
-            $(document).on('submit','.xhrForm.active', function(e){
+            $(document).on('submit','#connexion', function(e){
                 e.preventDefault();
-                if($(this).hasClass('file')){
-                    AJAX.request($(this), true);
-                }else{
-                    AJAX.request($(this), false);
-                }
-            });
-
-            /* Manage all .xhrForm with no button,
-            // trigger elem with class triggerSubmit
-            // and #xhrForm with class active*/
-            $(document).on('click','.xhrForm.active .triggerSubmit', function(e){
-                e.preventDefault();
-                if($(this).hasClass('file')){
-                    AJAX.request($(this).parents('form'), true);
-                }else{
-                    AJAX.request($(this).parents('form'), false);
-                }
+                AJAX.request($(this));
             });
         },
-        request: function(form, file){
-            var btnText;
-            var processdata, contenttype = true;
-            if(file){
-                processdata, contenttype = false;
-            }
-
-
-            var formData = new FormData();
-            var fileInput = document.querySelector('.fileInput');
-
-
-            formData.append('file', fileInput.files[0]);
-            formData.append('todo', form.find('input[name=todo]').val());
-            formData.append('routing', form.find('input[name=routing]').val());
+        request: function(form){
 
             $.ajax({
-                url: 'http://127.0.0.1/urdresser/dispatcher',
+                url: form.attr('action'),
                 type: 'POST',
-                data: formData,
+                data: form.serialize(),
                 cache: false,
                 contentType: false,
                 processData: false,
