@@ -1,50 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <title>test</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSPlugin.min.js"></script>
-  </head>
-  <body>
-
-    <div id="header">
-      <h2>Test titre h2</h2>
-    </div>
-    <div class="contentMenu">
-      <button id="btnMenu1" class="btnMenu"><i class="material-icons">account_circle</i><p class="pMenu">Log In</p></button>
-      <button id="btnMenu2" class="btnMenu"><i class="material-icons">card_giftcard</i><p class="pMenu">Don</p></button>
-      <button id="btnMenu3" class="btnMenu"><i class="material-icons">map</i><p class="pMenu">Besoin mondial</p></button>
-      <button id="btnMenu4" class="btnMenu"><i class="material-icons">games</i><p class="pMenu">Et si on jouait ?</p></button>
-      <button id="btnMenu5" class="btnMenu"><i class="material-icons">lightbulb_outline</i><p class="pMenu">???</p></button>
-    </div>
-    <div class="content">
-      <h2>titleHpContent</h2>
-      <div id="descContent">
-        <p>test test test test test  test test test test test test test test test test  test testtest testtest v test test vtesttesttesttesttesttesttest testtesttest  v.</p>
-      </div>
-    </div>
-    <div class="test">
-      <div id="filtre">
-      </div>
-      <div id="popUpLogin">
-        <form method="post">
-          <input class="inputLogin" type="text" name="Email" placeholder="Votre Email"><br>
-          <input class="inputLogin" type="password" name="Pswd" placeholder="Votre Mot de Passe"><br>
-          <input class="inputLogin btnValid" type="submit" value="Valider">
-        </form>
-        <a class="txtPopUp">Pas encore inscrit ?</a>
-      </div>
-    </div>
-
-
-    <footer id="footer"></footer>
-  </body>
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/TweenMax.min.js"></script>
-  <script src="js/coreJs.js"></script>
-  <script src="js/menu.js"></script>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>Urgency and Social Network</title>
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/normalize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSPlugin.min.js"></script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div id="title">
+            <h2>Urgency and Social Network</h2>
+        </div>
+        <nav>
+            <a id="btnMenu1" class="btnMenu"><i class="material-icons">account_circle</i><p>Log In</p></a>
+            <a id="btnMenu2" class="btnMenu"><i class="material-icons">card_giftcard</i><p>Don</p></a>
+            <a id="btnMenu3" class="btnMenu"><i class="material-icons">map</i><p>Besoin mondial</p></a>
+            <a id="btnMenu4" class="btnMenu"><i class="material-icons">games</i><p>Et si on jouait ?</p></a>
+            <a id="btnMenu5" class="btnMenu"><i class="material-icons">lightbulb_outline</i><p>???</p></a>
+        </nav>
+        <div id="content">
+            <section>
+                test
+            </section>
+            <div id="connect-form">
+                <div id="overlay"></div>
+                <div id="popUpLogin">
+                    <form method="post">
+                        <input class="inputLogin" type="text" name="Email" placeholder="Votre Email"><br>
+                        <input class="inputLogin" type="password" name="Pswd" placeholder="Votre Mot de Passe"><br>
+                        <input class="inputLogin btnValid" type="submit" value="Valider">
+                    </form>
+                    <a>Pas encore inscrit ?</a>
+                </div>
+            </div>
+        </div>
+        <footer id="footer"></footer>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/coreJs.js"></script>
+        <script src="js/menu.js"></script>
+    </body>
 </html>

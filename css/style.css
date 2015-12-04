@@ -1,153 +1,136 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,700);
-html{
-  height: 100%;
+
+html, body {
+    height: 100%;
 }
 
-body{
-  height: 100%;
-  font-family: 'Roboto', sans-serif;
-  overflow: hidden;
-  margin: 0;
-}
-
-h2{
-  color:#FFF;
-  font-size: 3.5em;
-  font-weight: 100;
-  text-align: center;
-}
-
-#filtre{
-  display: block;
-  position: absolute;
-  width: 120%;
-  height: 120%;
-  opacity: 0.7;
-  background-color: black;
-  z-index: 1;
-  top: -10%;
-  left:-10%;
-}
-
-#header{
-  display: block;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
-  height: 30%;
-  background: url('../img/header.jpg') center center;
-}
-
-.contentMenu{
-  position: relative;
-  height: 100%;
-  width: 15%;
-  display: inline-block;
-}
-
-.btnMenu{
-  opacity: 0;
-  display: block;
-  width:0;
-  background: #6EFACB;
-  font-size: 18px;
-  border: none;
-  font-weight: 600;
-  outline: none;
-  height: 14%;
-  cursor: pointer;
-}
-.material-icons{
-  float: left;
-  font-size: 25px;
-  margin-left: 2%;
-}
-.pMenu{
-  font-size: 1.0em;
-  font-weight: 300;
-  display: initial;
-  margin-top: 1px;
-}
-#btnMenu1:hover, #btnMenu2:hover, #btnMenu3:hover, #btnMenu4:hover, #btnMenu5:hover {
-  background: yellow;
-  transition: background-color 0.3s ease;
-}
-
-.content{
-  width: 85%;
-  height: 70%;
-  display:block;
-  float:right;
-}
-.content h2{
-  color : black;
-}
-
-#descContent{
-  width:70%;
-  margin-left:15%;
-}
-#descContent p{
-  text-align: justify;
-}
-
-.inputLogin{
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
     margin: 0 auto;
-    display: block;
-    width: 250px;
-    height: 50px;
-    font-size: 20px;
-    background: transparent;
-    border: 1px solid white;
+}
+
+h2 {
+    margin: 0;
+    color: #000;
+    font-size: 3.5em;
+    font-weight: 200;
     text-align: center;
-    color: white;
-    outline: none;
 }
-.inputLogin:focus {
-    border-color: #6EFACB;
+
+nav {
+    width: 300px;
 }
-.btnValid{
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-.btnValid:hover{
-  background: #6EFACB;
-  color:black;
-  transition: background-color 0.3s ease;
-  transition: color 0.3s ease;
+
+nav, #content {
+    float: left;
 }
 
 ::-webkit-input-placeholder {
-    color:rgba(255, 255, 255, 0.5);
-    text-align: center;
+    color:rgba(255, 255, 255, 0.2);
 }
 
-#popUpLogin{
-  display: block;
-  position: relative;
-  top: 27.5%;
-  left: 30%;
-  width: 30%;
-  height: 30%;
-  padding:5%;
-  background: black;
-  border-radius: 5px;
-  z-index: 2;
+/* ID */
 
+#overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    top: 0; right: 0; left: 0; bottom: 0;
+    position: fixed;
 }
 
-.test{
-  transform : scale(0.5);
-  display: none;
+#header {
+    height: 300px;
+    background: url('../img/header.jpg') center center;
+}
+
+#title h2 {
+    background: #EEE;
+    padding: 20px 0;
+}
+
+#btnMenu1, #btnMenu2, #btnMenu3, #btnMenu4, #btnMenu5 {
+    transition: all 0.3s ease;
+}
+
+#content {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+/* Menu */
+
+#btnMenu1 {
+    background: #467F71;
+}
+
+#btnMenu2 {
+    background: #93B56C;
+}
+
+#btnMenu3 {
+    background: #E52739;
+}
+
+#btnMenu4 {
+    background: #FFDD43;
+}
+
+#btnMenu5 {
+    background: #F27C38;
+}
+
+#connect-form {
+    display: none;
     position: absolute;
-    height : 100%;
-    width : 100%;
-    z-index: 2;
-    top : 0;
+    left: 50%;
 }
 
-.txtPopUp{
-  color: white;
-  text-align: center;
+#connect-form #popUpLogin {
+    background: #000;
+    padding: 100px;
+    margin-top: -50%;
+    left: -50%;
+    position: relative;
 }
+
+#connect-form #popUpLogin input {
+    color: #F27C38;
+    background: #222;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline: 1px solid #444;
+}
+
+#connect-form #popUpLogin input:focus {
+    outline: 1px solid #E52739;
+}
+
+#connect-form #popUpLogin a {
+    color: #E52739;
+}
+
+/* CLASS */
+
+.btnMenu {
+    width: 250px;
+    padding: 10px;
+    display: block;
+    margin: 0;
+}
+
+.btnMenu > * {
+    color: #FFF;
+    display: inline-block;
+}
+
+.btnMenu p {
+    margin-left: 10px;
+}
+
+.btnMenu i {
+    top: 5px;
+    position: relative;
+ }
