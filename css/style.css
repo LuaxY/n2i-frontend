@@ -17,6 +17,10 @@ h2{
   text-align: center;
 }
 
+.center{
+  text-align: center;
+}
+
 #filtre{
   display: block;
   position: absolute;
@@ -83,6 +87,24 @@ h2{
 .content h2{
   color : black;
 }
+.contentDon{
+  width: 85%;
+  height: 70%;
+  display:none;
+  float:right;
+}
+.contentMap{
+  width: 85%;
+  height: 70%;
+  display:none;
+  float:right;
+}
+.contentSeriousGame{
+  width: 85%;
+  height: 70%;
+  display:none;
+  float:right;
+}
 
 #descContent{
   width:70%;
@@ -123,7 +145,7 @@ h2{
     text-align: center;
 }
 
-#popUpLogin{
+#popUpLogin1{
   display: block;
   position: relative;
   top: 27.5%;
@@ -134,20 +156,43 @@ h2{
   background: black;
   border-radius: 5px;
   z-index: 2;
-
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+#popUpLogin2{
+  display: block;
+  position: relative;
+  top: 27.5%;
+  left: 30%;
+  width: 30%;
+  height: 30%;
+  padding:5%;
+  background: black;
+  border-radius: 5px;
+  z-index: 2;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
 }
 
 .contentLogin{
   transform : scale(0.5);
   display: none;
-    position: absolute;
-    height : 100%;
-    width : 100%;
-    z-index: 2;
-    top : 0;
+  position: absolute;
+  height : 100%;
+  width : 100%;
+  z-index: 2;
+  top : 0;
 }
 
 .txtPopUp{
   color: white;
-  text-align: center;
+  cursor: pointer;
+}
+.txtPopUp:hover{
+  color:yellow;
+  transition: color 0.3s ease;
 }
