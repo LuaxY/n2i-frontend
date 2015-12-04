@@ -41,4 +41,5 @@ $(function() {
           $('.contentMap').fadeOut();
           $('.contentSeriousGame').fadeIn();
       });
+
 });
