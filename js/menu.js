@@ -1,3 +1,6 @@
+var Menu = {
+  test : false,
+}
 $(function() {
 
   $height = $(window).height();
@@ -9,18 +12,18 @@ $(function() {
 
   //Button 1
   //popUpLogin
-  var test = false;
+  Menu.test = false;
   $('#btnMenu1').on('click', function(){
-    //TweenMax.to(".test", 0.2, {ease: Power4.easeOut, opacity:"0.8"});
+    //TweenMax.to(".Menu.test", 0.2, {ease: Power4.easeOut, opacity:"0.8"});
     $('.contentLogin').fadeIn();
     TweenMax.to(".contentLogin", 1 , {ease: Elastic.easeOut.config(1.2, 0.3), css:{scaleX:1, scaleY:1, opacity : 1}});
-    test = true;
+    Menu.test = true;
   });
 
   $('#filtre').on('click', function(){
-    if(test == true){
+    if(Menu.test == true){
         TweenMax.to(".contentLogin", 1 , {ease: Elastic.easeIn.config(1.2, 0.7), css:{scaleX:0.5, scaleY:0.5, opacity : 0}});
-        test = false;
+        Menu.test = false;
     }
   });
 
@@ -75,6 +78,13 @@ $(function() {
     $('.contentDon').fadeOut();
     $('.contentMap').fadeOut();
     $('.contentSeriousGame').fadeIn();
+  });
+
+  $('#btnMenu5').on('click', function(){
+    $('.contentDon').fadeOut();
+    $('.contentMap').fadeOut();
+    $('.contentSeriousGame').fadeOut();
+    $('.content').fadeIn();
   });
   //Over
   if($height >= 641){
