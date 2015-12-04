@@ -134,3 +134,26 @@ nav, #content {
     top: 5px;
     position: relative;
  }
+
+.center{
+    text-align: center;
+}
+
+.contentDon{
+    width: 85%;
+    height: 70%;
+    display:none;
+    float:right;
+}
+.contentMap{
+    width: 85%;
+    height: 70%;
+    display:none;
+    float:right;
+}
+.contentSeriousGame{
+    width: 85%;
+    height: 70%;
+    display:none;
+    float:right;
+}
