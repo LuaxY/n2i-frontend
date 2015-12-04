@@ -1,6 +1,10 @@
 $(function() {
+
+  $height = $(window).height();
+
   //Menu
-  var objects = ['#btnMenu1', '#btnMenu2', '#btnMenu3', '#btnMenu4', '#btnMenu5'];
+
+  var objects = ['#btnMenu5', '#btnMenu1', '#btnMenu2', '#btnMenu3', '#btnMenu4'];
   TweenMax.staggerTo(objects, 0.5, {width:"100%",opacity:"1", ease: Back.easeOut.config(1.7)}, 0.07);
 
   //Button 1
@@ -9,13 +13,13 @@ $(function() {
   $('#btnMenu1').on('click', function(){
     //TweenMax.to(".test", 0.2, {ease: Power4.easeOut, opacity:"0.8"});
     $('.contentLogin').fadeIn();
-    TweenMax.to(".contentLogin", 1 , {ease: Elastic.easeOut.config(1.2, 0.3), css:{scaleX:1, scaleY:1}});
+    TweenMax.to(".contentLogin", 1 , {ease: Elastic.easeOut.config(1.2, 0.3), css:{scaleX:1, scaleY:1, opacity : 1}});
     test = true;
   });
 
   $('#filtre').on('click', function(){
     if(test == true){
-        $('.contentLogin').fadeOut();
+        TweenMax.to(".contentLogin", 1 , {ease: Elastic.easeIn.config(1.2, 0.7), css:{scaleX:0.5, scaleY:0.5, opacity : 0}});
         test = false;
     }
   });
@@ -35,13 +39,15 @@ $(function() {
   });
 
   //Over
-  $('#btnMenu1').mouseover(function(){
-    TweenMax.to("#btnMenu1", 0.3, {ease: Power4.easeOut, width:"110%"});
-  });
+  if($height >= 641){
+    $('#btnMenu1').mouseover(function(){
+      TweenMax.to("#btnMenu1", 0.3, {ease: Power4.easeOut, width:"110%"});
+    });
 
-  $('#btnMenu1').mouseout(function(){
-    TweenMax.to("#btnMenu1", 0.4, {ease: Power4.easeOut, width:"100%"});
-  });
+    $('#btnMenu1').mouseout(function(){
+      TweenMax.to("#btnMenu1", 0.4, {ease: Power4.easeOut, width:"100%"});
+    });
+  };
 
 
   //Button 2
@@ -52,29 +58,16 @@ $(function() {
     $('.contentDon').fadeIn();
   });
   //Over
-  $('#btnMenu2').mouseover(function(){
-    TweenMax.to("#btnMenu2", 0.3, {ease: Power4.easeOut, width:"110%"});
-  });
+  if($height >= 641){
+    $('#btnMenu2').mouseover(function(){
+      TweenMax.to("#btnMenu2", 0.3, {ease: Power4.easeOut, width:"110%"});
+    });
 
-  $('#btnMenu2').mouseout(function(){
-    TweenMax.to("#btnMenu2", 0.4, {ease: Power4.easeOut, width:"100%"});
-  });
+    $('#btnMenu2').mouseout(function(){
+      TweenMax.to("#btnMenu2", 0.4, {ease: Power4.easeOut, width:"100%"});
+    });
+  };
 
-  //button 3
-  $('#btnMenu3').on('click', function(){
-    $('.content').fadeOut();
-    $('.contentSeriousGame').fadeOut();
-    $('.contentDon').fadeOut();
-    $('.contentMap').fadeIn();
-  });
-  //Over
-  $('#btnMenu3').mouseover(function(){
-    TweenMax.to("#btnMenu3", 0.3, {ease: Power4.easeOut, width:"110%"});
-  });
-
-  $('#btnMenu3').mouseout(function(){
-    TweenMax.to("#btnMenu3", 0.4, {ease: Power4.easeOut, width:"100%"});
-  });
 
   //button 4
   $('#btnMenu4').on('click', function(){
@@ -84,20 +77,24 @@ $(function() {
     $('.contentSeriousGame').fadeIn();
   });
   //Over
-  $('#btnMenu4').mouseover(function(){
-    TweenMax.to("#btnMenu4", 0.3, {ease: Power4.easeOut, width:"110%"});
-  });
+  if($height >= 641){
+    $('#btnMenu4').mouseover(function(){
+      TweenMax.to("#btnMenu4", 0.3, {ease: Power4.easeOut, width:"110%"});
+    });
 
-  $('#btnMenu4').mouseout(function(){
-    TweenMax.to("#btnMenu4", 0.4, {ease: Power4.easeOut, width:"100%"});
-  });
+    $('#btnMenu4').mouseout(function(){
+      TweenMax.to("#btnMenu4", 0.4, {ease: Power4.easeOut, width:"100%"});
+    });
+  };
 
   //Over
-  $('#btnMenu5').mouseover(function(){
-    TweenMax.to("#btnMenu5", 0.3, {ease: Power4.easeOut, width:"110%"});
-  });
+  if($height >= 641){
+    $('#btnMenu5').mouseover(function(){
+      TweenMax.to("#btnMenu5", 0.3, {ease: Power4.easeOut, width:"110%"});
+    });
 
-  $('#btnMenu5').mouseout(function(){
-    TweenMax.to("#btnMenu5", 0.4, {ease: Power4.easeOut, width:"100%"});
-  });
+    $('#btnMenu5').mouseout(function(){
+      TweenMax.to("#btnMenu5", 0.4, {ease: Power4.easeOut, width:"100%"});
+    });
+  };
 });

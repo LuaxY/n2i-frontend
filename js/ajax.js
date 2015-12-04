@@ -4,13 +4,12 @@ var AJAX = {
             console.log('JS AJAX INIT');
 
             /* Manage all .xhrForm with button /!\ need class active in case of                   // multiple form in same page */
-            $(document).on('submit','#don', function(e){
+            $(document).on('submit','#don, #connexion, #inscription', function(e){
                 e.preventDefault();
                 AJAX.request($(this));
             });
         },
         request: function(form){
-
             $.ajax({
                 url: form.attr('action'),
                 type: 'POST',
