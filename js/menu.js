@@ -105,6 +105,14 @@ $(function() {
     });
   };
 
+$('.gameLink').on('click', function(){
+  $('.contentGameZone').fadeIn();
+  $('.contentGameZone').addClass('displayed');
+  $('.blkLayout').on('click', function(){
+    $('.contentGameZone').fadeOut();
+    $('.contentGameZone').removeClass('displayed');
+  })
+})
 
   //button 4
   $('#btnMenu4').on('click', function(){
@@ -137,7 +145,6 @@ $(function() {
   if($height >= 641){
     $('#btnMenu4').mouseover(function(){
       TweenMax.to("#btnMenu4", 0.3, {ease: Power4.easeOut, width:"110%"});
-      audio.play();
     });
 
     $('#btnMenu4').mouseout(function(){

@@ -129,10 +129,27 @@ var Voice = {
             case "yoann":
             case "yoan":
             case "yohan":
-                console.log("yoan");
+            case "sournois":
+                $('.ledivsournois').fadeIn();
+                setTimeout(function(){
+                  $('.ledivsournois').fadeOut();
+                },3000);
                 break;
             case "marc":
-                console.log("marc");
+            case "marque":
+            case "mark":
+              $('.ledivpapa').fadeIn();
+              setTimeout(function(){
+                $('.ledivpapa').fadeOut();
+              },3000);
+                break;
+            case "lapin":
+                $('.contentGameZone').fadeIn();
+                $('.contentGameZone').addClass('displayed');
+                $('.blkLayout').on('click', function(){
+                  $('.contentGameZone').fadeOut();
+                  $('.contentGameZone').removeClass('displayed');
+                })
                 break;
   }
         setTimeout(function(){

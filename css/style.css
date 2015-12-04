@@ -91,6 +91,7 @@ h2{
 #btnMenu1:hover, #btnMenu2:hover, #btnMenu3:hover, #btnMenu4:hover, #btnMenu5:hover, #btnMenu6:hover {
   background: #57C19E;
   transition: background-color 0.3s ease;
+  PlaySound();
 }
 
 .content{
@@ -245,6 +246,69 @@ h2{
   width : 100%;
 }
 
+canvas
+{
+	border: 1px solid black;
+  z-index: 50;
+  position: absolute;
+}
+
+.contentGameZone
+{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	box-sizing : border-box;
+	padding : 50px;
+  top : 0;
+  z-index : 50;
+  display: none;
+}
+
+.blkLayout{
+    position: absolute;
+    height : 100%;
+    width : 100%;
+    top : 0;
+    left : 0;
+    opacity: 0.8;
+    background: black;
+    z-index : 25;
+}
+
+.ledivpapa, .ledivsournois{
+  position: absolute;
+  top : 0;
+  left : 0;
+  height : 100%;
+  width : 100%;
+    display : none;
+}
+
+.ledivpapa img, .ledivsournois img{
+  height : 70%;
+  margin: auto;
+  position : absolute;
+  top : 0;
+  bottom : 0;
+  left : 0;
+  right : 0;
+  z-index : 60;
+
+}
+
+.gameLink{
+  position: absolute;
+  z-index : 10;
+  height : 70px;
+  width : 70px;
+  top : 10px;
+  left : 10px;
+  background: url('../img/manette1.png') center center no-repeat #6EFACB;
+  background-size: 50px;
+  cursor : pointer;
+  border-radius: 100%;
+}
 @media screen and (max-width: 640px) {
 
   body{
@@ -341,5 +405,4 @@ h2{
     background: rgba(93, 86, 86, 0.6);
 
   }
-
   }
