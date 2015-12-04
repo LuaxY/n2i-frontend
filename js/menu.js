@@ -71,6 +71,17 @@ $(function() {
     });
   };
 
+  //Over
+  if($height >= 641){
+    $('#btnMenu3').mouseover(function(){
+      TweenMax.to("#btnMenu3", 0.3, {ease: Power4.easeOut, width:"110%"});
+    });
+
+    $('#btnMenu3').mouseout(function(){
+      TweenMax.to("#btnMenu3", 0.4, {ease: Power4.easeOut, width:"100%"});
+    });
+  };
+
 
   //button 4
   $('#btnMenu4').on('click', function(){
