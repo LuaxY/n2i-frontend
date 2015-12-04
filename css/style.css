@@ -40,7 +40,9 @@ h2{
   text-align: center;
   width: 100%;
   height: 30%;
-  background: url('../img/header.jpg') center center;
+  background: url('../img/hd.jpg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contentMenu{
@@ -75,7 +77,7 @@ h2{
   display: block;
 }
 #btnMenu1:hover, #btnMenu2:hover, #btnMenu3:hover, #btnMenu4:hover, #btnMenu5:hover {
-  background: yellow;
+  background: #57C19E;
   transition: background-color 0.3s ease;
 }
 
@@ -140,8 +142,11 @@ h2{
     border-color: #6EFACB;
 }
 .btnValid{
-  margin-top: 2%;
+  margin: 5% ;
   margin-bottom: 2%;
+}
+.inputDon.btnValid{
+  margin: 5% auto;
 }
 .btnValid:hover{
   background: #6EFACB;
@@ -222,4 +227,8 @@ h2{
 .inputDon ::-webkit-input-placeholder {
     color:rgba(0, 0, 0, 0.5);
     text-align: center;
+}
+.mapcontent{
+  height : 100%;
+  width : 100%;
 }
