@@ -19,7 +19,7 @@ h2 {
 }
 
 nav {
-    width: 300px;
+    width: 250px;
 }
 
 nav, #content {
@@ -115,7 +115,7 @@ nav, #content {
 /* CLASS */
 
 .btnMenu {
-    width: 250px;
+    width: 200px;
     padding: 10px;
     display: block;
     margin: 0;

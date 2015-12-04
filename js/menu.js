@@ -1,22 +1,15 @@
 $(function() {
     var objects = "#btnMenu1, #btnMenu2, #btnMenu3, #btnMenu4, #btnMenu5";
-    TweenMax.staggerTo(objects, 0.5, {width: "100%", opacity: "1", ease: Back.easeOut.config(1.7)}, 0.07);
+    TweenMax.staggerTo(objects, 0.5, {width: "100%", ease: Back.easeOut.config(1.7)}, 0.07);
 
     //popUpLogin
     $('#btnMenu1').on('click', function () {
-        //TweenMax.to(".test", 0.2, {ease: Power4.easeOut, opacity:"0.8"});
-        $('.test').fadeIn();
-        TweenMax.to("#popUpLogin", 1, {ease: Elastic.easeOut.config(1.2, 0.3), css: {scaleX: 1, scaleY: 1}});
+        $('#connect-form').fadeIn();
+        TweenMax.to("#popUpLogin", 1, {ease: Elastic.easeOut.config(1.2, 0.3), css: {scaleX: 1.3, scaleY: 1.3}});
+    });
 
-        $(objects).hover(function () {
-            TweenMax.to($(this), 0.2, {ease: Power4.easeOut, width: "300px"});
-        }, function () {
-            TweenMax.to($(this), 0.2, {ease: Power4.easeOut, width: "250px"});
-        });
-
-        $('#coToIns').on('click', function () {
-            TweenMax.to("#connexion", 1, {rotationY: '+=180'});
-        });
+    $('#coToIns').on('click', function () {
+        TweenMax.to("#connexion", 1, {rotationY: '+=180'});
     });
 
     //Button 2
