@@ -177,7 +177,6 @@ h2{
   -moz-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
 }
-
 .contentLogin{
   transform : scale(0.5);
   display: none;
