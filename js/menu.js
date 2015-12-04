@@ -41,6 +41,8 @@ $(function() {
 
   });
 
+  var audio = new Audio('Sound/bopshort.wav');
+
   //Over
   if($height >= 641){
     $('#btnMenu1').mouseover(function(){
@@ -63,9 +65,18 @@ $(function() {
     });
   };
 
+  $('#btnMenu1').on('click', function(){
+    audio.play();
+  });
+
+
+    $('#btnMenu3').on('click', function(){
+      audio.play();
+    });
 
   //Button 2
   $('#btnMenu2').on('click', function(){
+    audio.play();
     $('.content').fadeOut();
     $('.contentMap').fadeOut();
     $('.contentSeriousGame').fadeOut();
@@ -97,6 +108,7 @@ $(function() {
 
   //button 4
   $('#btnMenu4').on('click', function(){
+    audio.play();
     $('.content').fadeOut();
     $('.contentDon').fadeOut();
     $('.contentMap').fadeOut();
@@ -105,6 +117,7 @@ $(function() {
   });
 
   $('#btnMenu5').on('click', function(){
+    audio.play();
     $('.contentDon').fadeOut();
     $('.contentMap').fadeOut();
     $('.contentSeriousGame').fadeOut();
@@ -113,6 +126,7 @@ $(function() {
   });
 
   $('#btnMenu6').on('click', function(){
+    audio.play();
     $('.contentDon').fadeOut();
     $('.contentMap').fadeOut();
     $('.contentSeriousGame').fadeOut();
@@ -123,6 +137,7 @@ $(function() {
   if($height >= 641){
     $('#btnMenu4').mouseover(function(){
       TweenMax.to("#btnMenu4", 0.3, {ease: Power4.easeOut, width:"110%"});
+      audio.play();
     });
 
     $('#btnMenu4').mouseout(function(){
