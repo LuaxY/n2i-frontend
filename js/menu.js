@@ -27,6 +27,13 @@ $(function() {
 
   });
 
+  $('#insToCo').on('click', function(){
+    $('#popUpLogin2').fadeOut("400", function(){
+        $('#popUpLogin1').fadeIn("500");
+    });
+
+  });
+
   //Over
   $('#btnMenu1').mouseover(function(){
     TweenMax.to("#btnMenu1", 0.3, {ease: Power4.easeOut, width:"110%"});
